@@ -1,0 +1,28 @@
+<template name="ProjectsHeader">
+    <div class="jumbotron page-head">
+        <div class="container">
+            <h1>Projects</h1>
+            <p>參加StarTaiwan 2016的專案</p>
+            <p>Projects enrolled in StarTaiwan 2016</p>
+        </div>   
+    </div>
+</template>
+<template name="Projects">
+    {{#each projects}}
+        {{> ProjectThumb}}
+    {{/each}}
+
+
+</template>
+<template name="ProjectThumb">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>{{title}}</h3>
+                <h5>{{slogan}}</h5>
+                <p></p>
+                <p><a href="/projects/{{name}}" class="btn btn-info" role="button">Details</a></p>
+            </div>
+        </div>
+    </div>
+</template>

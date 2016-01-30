@@ -1,0 +1,24 @@
+<template name="UserLoginHeader">
+    <div class="jumbotron page-head">
+        <div class="container">
+            <h1>Login</h1>
+            <p>登入-管理你的專案</p>
+            <p>Login to create/update your project</p>
+        </div>   
+    </div>
+</template>
+<template name="UserLogin">
+    <div class="col-lg-4">
+        <form class="user-login">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">密碼</label>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <p class="text-right"><button type="submit" class="btn btn-default">登入</button></p>
+        </form>
+    </div>
+</template>

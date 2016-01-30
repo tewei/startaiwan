@@ -1,0 +1,33 @@
+<template name="UserSignupHeader">
+    <div class="jumbotron page-head">
+        <div class="container">
+            <h1>Signup</h1>
+            <p>註冊-參加StarTaiwan的第一步!</p>
+            <p>Signup to participate in StarTaiwan</p>
+        </div>   
+    </div>
+</template>
+<template name="UserSignup">
+    <div class="col-lg-5">
+        <p>注意：密碼長度需超過6字元</p>
+        <p>Attention: Min password length is 6 characters.</p>
+        <p>註冊完成後請登入新增專案資料</p>
+    </div>
+    <div class="col-lg-5">
+        <form class="user-signup">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">密碼</label>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <div class="form-group">
+                <label for="repassword">再次輸入密碼</label>
+                <input type="password" class="form-control" name="repassword">
+            </div>
+            <p class="text-right"><button type="submit" class="btn btn-default">註冊</button></p>
+        </form>
+    </div>
+</template>

@@ -1,0 +1,39 @@
+<template name="ProjectPageHeader">
+    <div class="jumbotron page-head">
+        <div class="container">
+            <h1>{{thisProject.name}}</h1>
+            <h3>{{thisProject.slogan}}</h3>
+            <p>Presented by{{#each thisProject.members}} {{name}}{{/each}}.</p>
+        </div> 
+    </div>
+</template>
+<template name="ProjectPage">
+
+    <div class="col-lg-8">
+        <h3>Description</h3>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {{thisProject.description}}
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+      <h3>Links</h3>
+      <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Website</button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Facebook</button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Github</button>
+    </div>
+    <h3>Members</h3>
+    <ul class="list-group">
+        {{#each members}}
+        <li class="list-group-item">
+            <p><strong>{{name}}</strong><span class="badge">{{grade}}</span> from {{school}}</p>
+            <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> {{email}}</p>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+
+</template>
